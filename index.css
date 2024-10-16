@@ -3,6 +3,8 @@
     padding-right: 15px;
     padding-left: 15px;
     border-bottom: 1px solid grey;
+    margin-bottom: 100px;
+    
 }
 
 .navdiv{
@@ -11,10 +13,12 @@
     justify-content: space-between;
     
 }
-.logo a{
-    font-size: 20px;
-    font-weight: 600;
-    color: black;
+.logo{
+    width:150px;
+    height: 33px;
+    img{
+        box-sizing: border-box;
+    }
 }
 
 li{
@@ -44,4 +48,24 @@ button a{
 
 *{
     text-decoration: none;
+}
+
+.part1{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:2fr 2fr 2fr 2fr;
+}
+
+.text{
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+img{
+    grid-column-start: 3;
+    grid-column-end: 3;
+  
+        width: 100%;
+height: 100%;
+object-fit: cover;
+    
 }
