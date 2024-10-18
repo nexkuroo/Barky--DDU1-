@@ -11,7 +11,16 @@
     display:flex;
     align-items: center;
     justify-content: space-between;
+    li{
+        display: inline-block;
+    }
     
+    li a{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+    }
 }
 .logo{
     width:150px;
@@ -19,17 +28,6 @@
     img{
         box-sizing: border-box;
     }
-}
-
-li{
-    display: inline-block;
-}
-
-li a{
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-    margin-right: 25px;
 }
 
 button{
@@ -54,8 +52,7 @@ button a{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 20%;
-    margin-left: 20%;
+    
     padding-bottom: 5%;
     border-bottom:1px solid grey;
     img{
@@ -76,8 +73,7 @@ button a{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-right: 20%;
-    margin-left: 20%;
+    
     padding-bottom: 5%;
     gap: 5%;
     padding-left: 3%;
@@ -91,8 +87,7 @@ button a{
     }
 }
 .funinfo{
-    margin-right: 20%;
-    margin-left: 20%;
+   
    
 }
 .images{
@@ -101,4 +96,128 @@ button a{
         max-width: 100%;
     }
     
+}
+.toptext{
+    width: 50%;
+    
+}
+.quote{
+    text-align: center;
+}
+.userinfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.userphoto{
+    height: 68px;
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    
+}
+.main-site{
+    
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.funfeedback{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-bottom:1px solid grey;
+}
+.startplancontainer{
+    width: 50%;
+    text-align: center;
+  
+   
+}
+.startplan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.perks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+    border-bottom:1px solid grey;
+}
+.perkscontainer{
+    margin-top: 5%;
+    background-color: bisque;
+    border-radius: 1%;
+    width: 507px;
+    li{
+        list-style: none;
+    }
+}
+
+table{
+  
+  width: 100%;
+    img{
+    width: 20px;;
+    }
+    border-collapse: collapse;
+    
+}
+
+tr.border_bottom td {
+    border-bottom: 1px solid black;
+    padding: 2%;
+}
+td.check{
+  text-align: end;  
+}
+
+.perkstable{
+    margin: 5%;
+}
+
+.teams{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+.build{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5%;
+    div{
+        text-align: center;
+    }
+}
+.team, .percent{
+    border-right:1px solid grey;
+   h2{
+    margin-top: 0px;
+   }
+   padding-right: 10px;
+}
+.percent, .percentnoline{
+    flex: 1;
+}
+.rowbadges{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5%;
+
+    img{
+        width: 470px;
+        height: 190px;
+    }
+}
+footer{
+    margin-top: 5%;
+    border-top:1px solid grey;
 }
