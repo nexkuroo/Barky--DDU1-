@@ -8,29 +8,33 @@
         </head>
         <body>
             <div id="website">
-                <div>
-                    <div class="navbar">
-                        <div class="navdiv">
-                            <div class="logo"><img src="images/brand.svg" alt=""></div>
-                            <ul>
-                                <li><a href="#">Product v</a></li>
-                                <li><a href="#">Teams</a></li>
-                                <li><a href="#">Induviduals</a></li>
-                                <li><a href="#">Download</a></li>
+                <div class="navbar">
+                    <div class="navdiv">
+                        <div class="logo"><img src="images/brand.svg" alt=""></div>
+                        <div class="navbuttons">
+                            <ul class = "navbutton">
+                                <li><a href="#">Product</a><img src="images/nav-caret.svg" alt="">
+                                </li>
+                                <li><a href="#">Teams</a><img src="images/nav-caret.svg" alt=""></li>
+                                <li><a href="#">Induviduals</a><img src="images/nav-caret.svg" alt=""></li>
+                                <li><a href="#">Download</a><img src="images/nav-caret.svg" alt=""></li>
                                 <li><a href="#">Pricing</a></li>
                             </ul>
-                            <ul>
-                                <li><a href="#">Request a demo</a></li>
+                            <ul class = "navbutton">
+                                <li class = "demoline"><a href="#">Request a demo</a></li>
                                 <li><a href="#">Log In</a></li>
-                                <button><a href="#">Get Barky free</a></button>
+                                <li><a href="#">Get Barky free</a></li>
                             </ul>
                             
                         </div>
                         
                     </div>
+                    
+                </div>
+                <div class = "websitecontent">
                     <main class="main-site">
                         <div class="intro">
-                            <div class="text">
+                            <div class="intro-text">
                                 <h1>Where packs bark better, together</h1>
                                 <p>Your chew toys, sniffing spots, and bark logs, all side by side. For small packs to big kennels.</p>
                                 <button><a href="#">Get Barky free</a></button>
@@ -68,7 +72,7 @@
                                 </div>
     
                                 <div class="quote">
-                                    <h1>“Barky helps us keep an eye on all 30+ squirrel-chasing missions we have going at once. We can sniff out any of them to get the full scoop right away.”</h1>
+                                    <p>“Barky helps us keep an eye on all 30+ squirrel-chasing missions we have going at once. We can sniff out any of them to get the full scoop right away.”</p>
                                     
                                 </div>
                                 <div class="userinfo">
@@ -77,7 +81,7 @@
                                     </div>
                                    
                                     <div class="userinfotext">
-                                        <p>Barkley Woofington <br>Chief Bone Officer, MetaLab</p>
+                                        <p class = "name">Barkley Woofington </p> <p class = "work">Chief Bone Officer, MetaLab</p>
                                         
                                     </div>
                                 </div>
@@ -95,9 +99,9 @@
                                 </div>
     
                                 <div class="quote">
-                                    <h1>“Before Barky, all the best sniffing spots were locked in the heads of a few top dogs. Now every pup
+                                    <p>“Before Barky, all the best sniffing spots were locked in the heads of a few top dogs. Now every pup
                                     feels empowered to fetch their own info and zoom around like a greyhound.”
-                                    </h1>
+                                    </p>
                                     
                                 </div>
                                 <div class="userinfo">
@@ -124,9 +128,9 @@
                                 </div>
     
                                 <div class="quote">
-                                    <h1>“We used to bark out meeting recaps all the time. But now the pack knows where to sniff if they have
+                                    <p>“We used to bark out meeting recaps all the time. But now the pack knows where to sniff if they have
                                     a question about the plan or anything else.”
-                                    </h1>
+                                    </p>
                                     
                                 </div>
                                 <div class="userinfo">
@@ -267,10 +271,12 @@
                             </div>
                         </div>
                     </main>
-                    <footer class="footer">
+                </div>
+                <footer class="footer">
+                    <div class="footercontainer">
                         <div class="barkysocials">
                             <div class="logo"><img src="images/brand.svg" alt=""></div>
-                            <div class="share">
+                            
                                 <ul class = "socials">
                                     <li><img src="images/share-01.svg" alt=""></li>
                                     <li><img src="images/share-02.svg" alt=""></li>
@@ -278,12 +284,12 @@
                                     <li><img src="images/share-04.svg" alt=""></li>
                                     <li><img src="images/share-05.svg" alt=""></li>
                                 </ul>
-                            </div>
+                            
                             <p>We do not sell or share your personal information <br> <br> © 2024 Barky Kennels, Inc</p>
                             
                         </div>
                         <div class="aboutbarky">
-                            <ul>
+                            <ul class = "learnmore">
                                <li class = "role">Company</li>
                                <li>About us</li>
                                <li>Careers</li>
@@ -291,14 +297,14 @@
                                <li>Status</li>
                                <li>Terms & privacy</li>
                             </ul>
-                            <ul>
+                            <ul class = "learnmore">
                                 <li class="role">Download</li>
                                 <li>iOS & Android</li>
                                 <li>Mac & Windows</li>
                                 <li>Calendar</li>
                                 <li>Web Clipper</li>
                             </ul>
-                            <ul>
+                            <ul class = "learnmore">
                                 <li class="role">Resources</li>
                                 <li>Help center</li>
                                 <li>Pricing</li>
@@ -308,15 +314,16 @@
                                 <li>Templates</li>
                                 <li>Affiliates</li>
                             </ul>
-                            <ul>
+                            <ul class = "learnmore">
                                 <li class="role">Notion for</li>
                                 <li>Enterprise</li>
                                 <li>Small business</li>
                                 <li>Personal</li>
                             </ul>
                         </div>
-                    </footer>
-                </div>
+                    </div>
+                    
+                </footer>
             </div>
         </body>
     </html>

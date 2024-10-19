@@ -1,36 +1,76 @@
-.navbar{
-    background-color: white;
-    padding-right: 15px;
-    padding-left: 15px;
-    border-bottom: 1px solid grey;
-    margin-bottom: 100px;
-    
+/*General*/
+@font-face {
+    font-family: "Inter";
+    src: url(fonts/Inter.ttf);
 }
 
+body{
+    font-family: "Inter";
+    margin:0;
+}
+.websitecontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+/*Navigation*/
+.navbar{
+    border-bottom: 1px solid #e5e5e5;
+    position: fixed;
+    background-color: white;
+    top: 0px;
+    width: 98%;
+    margin:  0px 1% 0px 1%;
+}
+
+.navbuttons{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+   width: 100%;
+}
+
+.navbutton{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    li a{
+        color: black;
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+        margin-right: 6px;
+    }
+    img{
+       height: 6px;
+       margin-bottom: 2px;
+      
+    }
+    li{
+        list-style: none;
+        padding: 2px;
+    }
+}
+.demoline{
+    border-right:1px solid grey;
+}
 .navdiv{
     display:flex;
     align-items: center;
-    justify-content: space-between;
-    li{
-        display: inline-block;
-    }
-    
-    li a{
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-    margin-right: 25px;
-    }
+    padding: 0px 5px 0px 5px;
 }
 .logo{
     
     img{
-        width:150px;
-    height: 33px;
+        width:100px;
+        height: 33px;
         box-sizing: border-box;
     }
 }
 
+/*Button n hover ish*/
 button{
     background-color: black;
     margin-left: 10px;
@@ -45,65 +85,84 @@ button a{
     font-size: 15px;
 }
 
-*{
-    text-decoration: none;
-}
-
+/*Intro*/
 .intro{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     
-    padding-bottom: 5%;
+    padding-bottom: 7%;
     border-bottom:1px solid grey;
-    img{
-        width: 50%
+    h1{
+        font-size: 45px;
     }
+    img{
+        width: 500px;
+    }
+}
+p{
+    font-size: 18px;
+    color: #666666;
 }
 @media (max-width: 1160px){
     .intro{
         display: block;
     }
 }
+
+.intro-text, .toptext{
+    width: 450px;
+}
+/*Companies*/
 .companies{
-    height: 100px;
-   
+    display: flex;
+    align-items: center;
+    height: 140px;
+    border-bottom:1px solid grey;
 }
 .companiescontainer{
     display: flex;
+    flex-direction: row;
+    row-gap: 15px;
+    column-gap: 40px;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    
-    padding-bottom: 5%;
-    gap: 5%;
     padding-left: 3%;
     padding-right: 3%;
-    padding-bottom: 5%;
-    border-bottom:1px solid grey;
-   
     img{
-        width: 10%;
-        
+        flex-shrink: 0;
+       height: 40px;
+        width: 100px;
+        object-fit: contain;
     }
 }
-.funinfo{
-   
-   
+/*Fun Feedback*/
+.funfeedback{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-bottom:1px solid grey;
 }
 .images{
-   
+    border-radius: 10px;
+    border: 15px solid transparent;
+    box-shadow: 10px 10px 30px 15px #f4f4f4;
+    margin-bottom: 5%;
     img{
         max-width: 100%;
     }
-    
 }
 .toptext{
-    width: 50%;
-    
+    padding-bottom: 5%;
+    p{
+        font-size: 15px;
+    }
 }
-.quote{
+.quote p{
     text-align: center;
+    font-size: 45px;
+    color: #999999;
+    font-weight: 570;
 }
 .userinfo{
     display: flex;
@@ -111,25 +170,24 @@ button a{
     justify-content: center;
 }
 .userphoto{
-    height: 68px;
+    height: 50px;
     img{
         height: 100%;
         width: 100%;
         object-fit: contain;
     }
-    
 }
-.main-site{
-    
-    margin-left: 10%;
-    margin-right: 10%;
+.userinfotext{
+   padding: 0;
+   margin-left: 10px;
 }
 
-.funfeedback{
-    padding-top: 5%;
-    padding-bottom: 5%;
-    border-bottom:1px solid grey;
+.main-site{
+    margin-top: 100px;
+    width: 1000px;
 }
+
+
 .startplancontainer{
     width: 50%;
     text-align: center;
@@ -222,12 +280,41 @@ footer{
     margin-top: 5%;
     border-top:1px solid grey;
 }
-.share{
+.aboutbarky{
+    display: flex;
+    flex-direction: row;
+}
+    
+.footer{
     li{
         list-style: none;
     }
+}
+.footercontainer{
+    display: flex;
+    flex-direction: row;
+}
+.socials{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+    margin-left: 0;
+    width: 170px;
+    li{
+        flex: 1;
+    }
+    
     img{
         width: 20px;
     }
 }
+ul li.role{
     
+    font-weight: bold;
+}
+.barkysocials{
+    display: flex;
+    flex-direction: column;
+}
