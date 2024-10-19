@@ -23,9 +23,10 @@
     }
 }
 .logo{
-    width:150px;
-    height: 33px;
+    
     img{
+        width:150px;
+    height: 33px;
         box-sizing: border-box;
     }
 }
@@ -221,3 +222,12 @@ footer{
     margin-top: 5%;
     border-top:1px solid grey;
 }
+.share{
+    li{
+        list-style: none;
+    }
+    img{
+        width: 20px;
+    }
+}
+    
