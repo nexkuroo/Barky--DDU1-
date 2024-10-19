@@ -13,8 +13,13 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   
 }
+
+.main-site{
+    margin-top: 100px;
+    width: 1000px;
+}
+
 /*Navigation*/
 .navbar{
     border-bottom: 1px solid #e5e5e5;
@@ -182,17 +187,11 @@ p{
    margin-left: 10px;
 }
 
-.main-site{
-    margin-top: 100px;
-    width: 1000px;
-}
-
+/*Start Plan*/
 
 .startplancontainer{
     width: 50%;
     text-align: center;
-  
-   
 }
 .startplan{
     display: flex;
@@ -208,9 +207,9 @@ p{
 }
 .perkscontainer{
     margin-top: 5%;
-    background-color: bisque;
+    background-color:#f4f4f4;
     border-radius: 1%;
-    width: 507px;
+    width: 700px;
     li{
         list-style: none;
     }
@@ -227,7 +226,10 @@ table{
 }
 
 tr.border_bottom td {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 2%;
+}
+tr.last_data td {
     padding: 2%;
 }
 td.check{
@@ -276,16 +278,27 @@ td.check{
         height: 190px;
     }
 }
+
+/*Footer*/
+
 footer{
+    padding: 100px;
     margin-top: 5%;
     border-top:1px solid grey;
+    display: flex;
+    justify-content: center;
+   
+    li{
+        list-style: none;
+    }
 }
 .aboutbarky{
     display: flex;
     flex-direction: row;
+    column-gap: 70px;
 }
     
-.footer{
+footer{
     li{
         list-style: none;
     }
@@ -293,6 +306,7 @@ footer{
 .footercontainer{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .socials{
     display: flex;
@@ -311,8 +325,13 @@ footer{
     }
 }
 ul li.role{
+   font-size: 15px;
+    font-weight: bold; 
+}
+ul li{
+    font-size: 14px;
+    line-height: 30px;
     
-    font-weight: bold;
 }
 .barkysocials{
     display: flex;
