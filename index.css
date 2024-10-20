@@ -259,6 +259,13 @@ p{
 .doglove{
     text-align: center;
 }
+
+@media (max-width: 600px){
+    .startplancontainer{
+        height: 30%;
+        width: 100%;
+    }
+}
 table{
   
   width: 100%;
@@ -329,6 +336,28 @@ td.check{
     }
 }
 
+@media (max-width: 600px){
+    .teams{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 600px){
+    .rowbadges{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .badgetext{
+        text-align: start;
+    }
+    .team, .percent, .percentnoline{
+       flex: 1;
+        border-right:0px;
+       padding-right: 10px;
+    }
+}
 /*Footer*/
 
 footer{
