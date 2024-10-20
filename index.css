@@ -20,6 +20,13 @@ body{
     width: 1000px;
 }
 
+@media (max-width: 600px){
+    .main-site{
+        margin-top: 150px;
+        width: 550px;
+    }
+}
+
 /*Navigation*/
 .navbar{
     border-bottom: 1px solid #e5e5e5;
@@ -33,38 +40,43 @@ body{
 .navbuttons{
     display:flex;
     justify-content: space-between;
-    align-items: center;
+    height: 60px;
    width: 100%;
 }
 
 .navbutton{
     display: flex;
-    flex-direction: row;
     gap: 20px;
+    padding: 0;
     li a{
-        color: black;
+       
         font-size: 15px;
         font-weight: 500;
         text-decoration: none;
-        margin-right: 6px;
+        display: block;
     }
     img{
        height: 6px;
-       margin-bottom: 2px;
-      
+       margin-left: 6px;
+    }
+    div{
+        padding: 0px 10px 0px 10px;
+        display: flex;  
+        text-align: center;
+        align-items: center;
     }
     li{
-        list-style: none;
-        padding: 2px;
+        list-style: none; 
     }
 }
 .demoline{
-    border-right:1px solid grey;
+    border-right:1px solid  #e5e5e5;
 }
 .navdiv{
     display:flex;
     align-items: center;
-    padding: 0px 5px 0px 5px;
+    gap: 2%;
+   
 }
 .logo{
     
@@ -75,19 +87,14 @@ body{
     }
 }
 
-/*Button n hover ish*/
-button{
-    background-color: black;
-    margin-left: 10px;
-    border-radius: 10px;
-    width: 150px;
-    box-sizing: border-box;
-}
-
-button a{
-    color: white;
-    font-weight: bold;
-    font-size: 15px;
+@media (max-width: 600px){
+    .navbar{
+        border-bottom: 0px;
+        padding: 20px;
+    }
+    .navbutton{
+        display: none;
+    }
 }
 
 /*Intro*/
@@ -97,7 +104,7 @@ button a{
     justify-content: space-between;
     
     padding-bottom: 7%;
-    border-bottom:1px solid grey;
+    border-bottom:1px solid  #e5e5e5;
     h1{
         font-size: 45px;
     }
@@ -109,21 +116,26 @@ p{
     font-size: 18px;
     color: #666666;
 }
-@media (max-width: 1160px){
-    .intro{
-        display: block;
-    }
-}
-
 .intro-text, .toptext{
     width: 450px;
 }
+@media (max-width: 600px){
+    .intro{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+
+
 /*Companies*/
 .companies{
     display: flex;
     align-items: center;
-    height: 140px;
-    border-bottom:1px solid grey;
+    height: 250px;
+    border-bottom:1px solid  #e5e5e5;
 }
 .companiescontainer{
     display: flex;
@@ -133,8 +145,8 @@ p{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 30px;
+    padding-right: 30px;
     img{
         flex-shrink: 0;
        height: 40px;
@@ -142,11 +154,21 @@ p{
         object-fit: contain;
     }
 }
+
+@media (max-width: 600px){
+    .intro{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
 /*Fun Feedback*/
 .funfeedback{
     padding-top: 5%;
     padding-bottom: 5%;
-    border-bottom:1px solid grey;
+    border-bottom:1px solid  #e5e5e5;
 }
 .images{
     border-radius: 10px;
@@ -163,12 +185,7 @@ p{
         font-size: 15px;
     }
 }
-.quote p{
-    text-align: center;
-    font-size: 45px;
-    color: #999999;
-    font-weight: 570;
-}
+
 .userinfo{
     display: flex;
     align-items: center;
@@ -187,16 +204,37 @@ p{
    margin-left: 10px;
 }
 
+@media (max-width: 600px){
+    .funfeedback{
+        
+        padding-top: 5%;
+        padding-bottom: 5%;
+        border-bottom:1px solid  #e5e5e5; 
+    }
+    .funinfo{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
 /*Start Plan*/
 
 .startplancontainer{
-    width: 50%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 .startplan{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 300px;
 }
 .perks{
     display: flex;
@@ -214,7 +252,9 @@ p{
         list-style: none;
     }
 }
-
+.doglove{
+    text-align: center;
+}
 table{
   
   width: 100%;
@@ -247,6 +287,7 @@ td.check{
     width: 100%;
     gap: 10px;
 }
+/*Build*/
 .build{
     display: flex;
     justify-content: center;
@@ -259,13 +300,18 @@ td.check{
 }
 .team, .percent{
     border-right:1px solid grey;
-   h2{
-    margin-top: 0px;
-   }
    padding-right: 10px;
 }
 .percent, .percentnoline{
     flex: 1;
+    /*Change margin on all text*/
+    p{
+       margin-bottom: 0px;
+    }
+    h2{
+        margin-top: 0px;
+        font-size: 45px;
+    }
 }
 .rowbadges{
     display: flex;
@@ -336,4 +382,58 @@ ul li{
 .barkysocials{
     display: flex;
     flex-direction: column;
+}
+/*Fonts*/
+
+.header{
+    font-size: 36px;
+    
+}
+
+/*Buttons*/
+
+.button {
+
+        
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    :hover{
+       
+        border-radius: 5px;
+        background-color:#f4f4f4;
+    }
+   
+}
+ 
+
+ .empty-button{
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    :hover{
+        border-radius: 5px;
+        background-color:#f4f4f4;
+    }
+   
+}
+
+ .black-buttons{
+    background-color: black;
+    display: inline-block;
+    border-radius: 5px;
+    div{
+        display: inline-block;
+        padding: 5px;
+    }
+    a{ 
+        text-decoration: none;
+        color: white;
+    }
+    :hover{
+        border-radius: 5px;
+        background-color: #353535;
+     }
 }
