@@ -363,7 +363,7 @@ td.check{
 footer{
     padding: 100px;
     margin-top: 5%;
-    border-top:1px solid grey;
+    border-top: 1px solid grey;
     display: flex;
     justify-content: center;
    
@@ -374,7 +374,12 @@ footer{
 .aboutbarky{
     display: flex;
     flex-direction: row;
-    column-gap: 70px;
+}
+
+.getbarky, .download{
+    display:flex;
+    flex-direction: row;
+    
 }
     
 footer{
@@ -392,8 +397,6 @@ footer{
     flex-direction: row;
     list-style: none;
     padding-left: 0;
-    margin-left: 0;
-    margin-left: 0;
     width: 170px;
     li{
         flex: 1;
@@ -415,6 +418,30 @@ ul li{
 .barkysocials{
     display: flex;
     flex-direction: column;
+}
+@media (max-width: 600px){
+    .footercontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        
+    }
+    footer{
+        width: 600px;
+        padding: 50px;
+        justify-content: start;
+    }
+    .aboutbarky {
+        gap: 170px;
+    }
+    .getbarky, .download{
+        display:flex;
+        flex-direction: column;
+    }
+   ul{
+    padding: 0px;
+   }
 }
 /*Fonts*/
 
