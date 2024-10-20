@@ -218,6 +218,10 @@ p{
         justify-content: center;
         flex-direction: column;
     }
+    .toptext{
+        text-align: center;
+        width: 100%;
+    }
 }
 
 /*Start Plan*/
