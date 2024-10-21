@@ -10,6 +10,7 @@ body{
 .websitecontent{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 * {
     box-sizing: border-box;
@@ -22,12 +23,13 @@ body{
 @media (max-width: 600px){
     .main-site{
         margin-top: 150px;
-        width: 580px;
+        width: 95%;
     }
     .websitecontent
     {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 }
 
@@ -337,6 +339,7 @@ table{
     img{
     width: 20px;;
     }
+    
 }
 
 tr.border_bottom td {
