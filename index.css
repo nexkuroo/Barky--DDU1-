@@ -232,7 +232,16 @@ body{
 .userinfotext{
    padding: 0;
    margin-left: 10px;
-   
+   p{
+    color: #999999;
+   }
+   b{
+    color: black;
+   }
+   br{
+    display: block;
+   margin: 2px 0;
+   }
 }
 
 @media (max-width: 600px){
