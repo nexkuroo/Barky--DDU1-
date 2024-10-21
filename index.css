@@ -3,7 +3,6 @@
     font-family: "Inter";
     src: url(fonts/Inter.ttf);
 }
-
 body{
     font-family: "Inter";
     margin:0;
@@ -23,11 +22,20 @@ body{
 @media (max-width: 600px){
     .main-site{
         margin-top: 150px;
-        width: 550px;
+        width: 600px;
+    }
+    .websitecontent
+    {
+        display: flex;
+        justify-content: center;
+       
     }
 }
 
 /*Navigation*/
+.hamburger{
+    display: none;
+}
 .navbar{
     border-bottom: 1px solid #e5e5e5;
     position: fixed;
@@ -108,11 +116,25 @@ body{
 
 @media (max-width: 600px){
     .navbar{
+        width: 600px;
+        margin:  0px 0px 0px 0px; 
         border-bottom: 0px;
-        padding: 20px;
+        
     }
-    .navbutton{
-        display: none;
+    div.navbuttons{
+       display: none;
+    }
+    .hamburger{
+        display: block;
+        width:20px;
+        height: 33px;
+        box-sizing: border-box;
+    }
+    .navdiv{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
 }
 
@@ -171,12 +193,12 @@ body{
 }
 
 @media (max-width: 600px){
-    .intro{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column-reverse;
-        text-align: center;
+    .companiescontainer{
+        height: 100%;
+        row-gap:5px;
+        column-gap: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 }
 
@@ -301,13 +323,7 @@ body{
     }
 }
 .doglove{
-    .header{
-        text-align: center;
-    }
-    p{
-        text-align: start;
-    }
-    
+    text-align: center;
 }
 
 @media (max-width: 600px){
@@ -372,9 +388,7 @@ td.check{
     border-right:1px solid #f4f4f4;
    padding-right: 10px;
 }
-
 .percent, .percentnoline{
-    color: #666666;
     flex: 1;
     p{
        margin-bottom: 0px;
@@ -490,7 +504,6 @@ ul li{
     }
     footer{
         width: 600px;
-        padding: 50px;
         justify-content: start;
     }
     .aboutbarky {
