@@ -232,9 +232,7 @@ body{
 .userinfotext{
    padding: 0;
    margin-left: 10px;
-   br{
-    line-height: 10px;
-   }
+   
 }
 
 @media (max-width: 600px){
