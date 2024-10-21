@@ -150,7 +150,7 @@ body{
         font-size: 45px;
     }
     img{
-        width: 500px;
+        width: 50%;
     }
 }
 
@@ -165,14 +165,17 @@ body{
         justify-content: center;
         flex-direction: column-reverse;
         text-align: center;
+        img{
+            width: 90%;
+        }
     }
+   
 }
 
 /*Companies*/
 .companies{
     display: flex;
     align-items: center;
-    height: 200px;
     border-bottom:1px solid  #e5e5e5;
 }
 .companiescontainer{
@@ -403,7 +406,7 @@ td.check{
     margin-bottom: 5%;
 
     img{
-        width: 470px;
+        width:100%;
         height: 190px;
     }
 }
@@ -499,9 +502,10 @@ ul li{
         flex-direction: column;
         align-items: start;
         justify-content: start;
+        width: 100%;
     }
     footer{
-        width: 600px;
+        width: 100%;
         justify-content: start;
     }
     .aboutbarky {
