@@ -185,12 +185,14 @@ p{
         text-align: center;
     }
 }
+
 /*Fun Feedback*/
 .funfeedback{
     padding-top: 5%;
     padding-bottom: 5%;
     border-bottom:1px solid  #e5e5e5;
 }
+
 .images{
     border-radius: 10px;
     border: 15px solid transparent;
@@ -200,6 +202,7 @@ p{
         max-width: 100%;
     }
 }
+
 .toptext{
     padding-bottom: 5%;
     p{
@@ -212,6 +215,7 @@ p{
     align-items: center;
     justify-content: center;
 }
+
 .userphoto{
     height: 50px;
     img{
@@ -266,7 +270,7 @@ p{
     justify-content: center;
     align-items: center;
     padding-bottom: 5%;
-    border-bottom:1px solid grey;
+    border-bottom:1px solid #f4f4f4;
 }
 .perkscontainer{
     margin-top: 5%;
@@ -287,6 +291,8 @@ p{
         width: 100%;
     }
 }
+/*Perks*/
+
 table{
   
   width: 100%;
@@ -319,6 +325,7 @@ td.check{
     width: 100%;
     gap: 10px;
 }
+
 /*Build*/
 .build{
     display: flex;
@@ -331,12 +338,11 @@ td.check{
     }
 }
 .team, .percent{
-    border-right:1px solid grey;
+    border-right:1px solid #f4f4f4;
    padding-right: 10px;
 }
 .percent, .percentnoline{
     flex: 1;
-    /*Change margin on all text*/
     p{
        margin-bottom: 0px;
     }
@@ -384,7 +390,7 @@ td.check{
 footer{
     padding: 100px;
     margin-top: 5%;
-    border-top: 1px solid grey;
+    border-top: 1px solid #f4f4f4;
     display: flex;
     justify-content: center;
    
