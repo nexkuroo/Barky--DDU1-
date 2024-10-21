@@ -116,13 +116,14 @@ body{
     }
 }
 
+
 /*Intro*/
 .intro{
     display: flex;
     align-items: center;
     justify-content: space-between;
     
-    padding-bottom: 7%;
+    padding-bottom: 10%;
     border-bottom:1px solid  #e5e5e5;
     h1{
         font-size: 45px;
@@ -130,11 +131,6 @@ body{
     img{
         width: 500px;
     }
-}
-
-p{
-    font-size: 18px;
-    color: #666666;
 }
 
 .intro-text, .toptext{
@@ -155,7 +151,7 @@ p{
 .companies{
     display: flex;
     align-items: center;
-    height: 250px;
+    height: 200px;
     border-bottom:1px solid  #e5e5e5;
 }
 .companiescontainer{
@@ -166,8 +162,6 @@ p{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding-left: 30px;
-    padding-right: 30px;
     img{
         flex-shrink: 0;
        height: 40px;
@@ -204,9 +198,20 @@ p{
 }
 
 .toptext{
-    padding-bottom: 5%;
+    padding-bottom: 30px;
     p{
-        font-size: 15px;
+        font-size: 18px;
+        color: #7f7f7f;
+        line-height: 23px;
+    }
+}
+
+.quote{
+    p{
+        text-align: center;
+        font-size: 45px;
+        color: #999999;
+        font-weight: bold;
     }
 }
 
@@ -227,6 +232,9 @@ p{
 .userinfotext{
    padding: 0;
    margin-left: 10px;
+   br{
+    line-height: 10px;
+   }
 }
 
 @media (max-width: 600px){
