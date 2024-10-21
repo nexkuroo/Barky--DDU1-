@@ -13,7 +13,9 @@ body{
     align-items: center;
     flex-direction: column;
 }
-
+* {
+    box-sizing: border-box;
+}
 .main-site{
     margin-top: 100px;
     width: 1000px;
@@ -22,13 +24,14 @@ body{
 @media (max-width: 600px){
     .main-site{
         margin-top: 150px;
-        width: 600px;
+        width: 560px;
+        box-sizing: border-box;
+        padding: 0px 10px 10px 0px;
     }
     .websitecontent
     {
         display: flex;
         justify-content: center;
-       
     }
 }
 
@@ -117,9 +120,10 @@ body{
 @media (max-width: 600px){
     .navbar{
         width: 600px;
+        padding: 10px;
         margin:  0px 0px 0px 0px; 
         border-bottom: 0px;
-        
+        box-sizing: border-box;
     }
     div.navbuttons{
        display: none;
@@ -500,7 +504,6 @@ ul li{
         flex-direction: column;
         align-items: start;
         justify-content: start;
-        
     }
     footer{
         width: 600px;
@@ -526,9 +529,7 @@ ul li{
 
 /*Buttons*/
 
-.button {
-
-        
+.button {       
     a{
         text-decoration: none;
         color: black;
